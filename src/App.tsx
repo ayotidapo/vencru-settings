@@ -14,7 +14,7 @@ import data from './data'
 function App() {
   return (
     <div className="app-container">
-      <div className="md:flex md:flex-row   xs:flex-col xs:overflow-hidden">
+      <div className="md:flex md:flex-row   xs:flex-col xs:overflow-hidden md:overflow-auto">
         <SideBar/>
       
         <main className='flex-1 md:px-10 py-7 xs:px-0 bg-gray-50'>
