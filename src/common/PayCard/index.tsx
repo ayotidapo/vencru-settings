@@ -1,14 +1,19 @@
-import {ReactComponent as Visa} from '../../assets/svg/visa.svg'
+
 
 interface Props{
    item :{ id:string;
     title:string;
     expiryDate: string;
+    imgUrl?:string;
    }
 }
 
  const PayCard:React.FC<Props> =(props:Props)=>{
-    const {id, title,expiryDate} = props.item
+    const {id, title,expiryDate,imgUrl} = props.item
+ 
+
+
+
     return(
         <label className='h-[100px] mb-5 xs:mb-3 relative block border hover:border-purple-500 rounded-[8px]'
          htmlFor={id}
@@ -18,7 +23,7 @@ interface Props{
             <div className='flex bg-white h-full  hover:bg-purple-100 hover:cursor-pointer
               w-full rounded-[8px] py-4 px-5 text-sm'
              >
-                <Visa/>
+                <img src={imgUrl} alt="card" className="w-[46px] h-[32px]"/>
                 <div className='inline-flex flex-col ml-4'>
                     <span className='text-a'>{title} </span>
                     <span className='text-b  text-gray-500 font-light'>{expiryDate}</span>

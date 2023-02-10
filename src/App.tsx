@@ -12,6 +12,7 @@ import data from './data'
 
 
 function App() {
+  const icons:any[]= [Visa,MasterCard]
   return (
     <div className="app-container">
       <div className="md:flex md:flex-row   xs:flex-col xs:overflow-hidden md:overflow-auto">
