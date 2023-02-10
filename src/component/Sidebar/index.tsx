@@ -20,7 +20,7 @@ const SideBar =()=>{
           <div className="flex items-center my-2 ml-3 ">
             <Icon/>
             <h3 className='ml-2 text-xl '> Untitled UI</h3>
-            <Hamburger className='xs:block xs:ml-[auto] md:hidden hover:cursor-pointer '/>
+            <Hamburger className='xs:block xs:ml-[auto] md:hidden hover:cursor-pointer mr-2'/>
           </div>
         <div className='md:block  xs:hidden'>
           <div className='flex relative my-6 w-[95%] pl-3'>
@@ -40,9 +40,9 @@ const SideBar =()=>{
             </ul>
           </nav>
           <article className='bg-slate-50 rounded-[8px] m-2 h-[292px] p-4'>
-            <h6 className=' text-gray-900 mb-2 px-0 border border-y-0 border-l-0 border-r-customGray'>New feature available!</h6>
-            <span className='text-gray-500 text-sm leading-1 font-light'>Check out the new dashboard view. Pages now load faster.</span>
-            <div className='w-full mt-4 mb-2 px-5 border border-y-0 border-l-0 border-r-customGray'>
+            <h6 className=' text-gray-900 mb-2 px-0 border border-y-0 border-l-0 border-r-customGray border-r-0'>New feature available!</h6>
+            <span className='text-gray-500 text-sm leading-1 font-light border-r-0'>Check out the new dashboard view. Pages now load faster.</span>
+            <div className='w-full mt-4 mb-2 px-0 border border-y-0 border-l-0 border-r-customGray'>
               <img src={Girl} alt="girl" className='rounded-[8px]' />
               
             </div>
@@ -55,7 +55,7 @@ const SideBar =()=>{
           </article>
           <div className='flex py-1 mt-6 pl-5  md:border md:border-x-0 md:border-b-0 relative'>
             <img src={Girl2} alt="girl-2 " className='w-10 h-20 '/>
-             <Play className='icon absolute top-[-127px] left-[37px]'/>
+             <Play className='absolute top-[-127px] left-[37px]'/>
             <div className='flex flex-col flex-1 justify-center ml-3'>
               <small className='text-gray-900'>Olivia Rhyle</small>
               <small className='text-gray-500'>olivia@untitledui.com</small>

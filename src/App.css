@@ -1,9 +1,9 @@
 .app-container{
-  @apply h-screen overflow-scroll bg-gray-50 max-w-[2560px] mx-auto  px-3;
+  @apply h-screen overflow-scroll bg-gray-50 max-w-[2560px] mx-auto  md:px-3  xs:px-0;
 }
 .side-bar{
-  @apply md:border md:border-y-0 md:border-l-0 md:border-vencruGray-100 md:w-[17.5rem]  xs:w-full md:h-[960px] xs:h-[auto] md:pr-3 pl-0 md:px-2 pt-5 border-l-0 xs:pr-0 
-  xs:border-0 bg-white;
+  @apply md:border md:border-y-0 md:border-l-0 md:border-vencruGray-100 md:w-[17.5rem]  xs:w-full md:h-[960px] xs:h-[auto] md:pr-3 pl-0 md:px-2 md:pt-5 border-l-0 xs:px-0.5
+  xs:border-0 bg-white xs:p-3 ;
 }
 
 
@@ -24,7 +24,7 @@
 }
 
 .tab{
-  @apply flex items-center py-2.5 pl-[20px] rounded-[8px] hover:bg-slate-50 hover:cursor-pointer text-slate-600 font-medium;
+  @apply flex items-center py-2.5 pl-[20px] rounded-[8px] hover:bg-slate-50 hover:cursor-pointer text-slate-600 font-normal;
 }
 .header-btn-group{
   @apply inline-flex  border border-customGray bg-white rounded-[8px] mb-8;

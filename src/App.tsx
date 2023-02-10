@@ -17,7 +17,7 @@ function App() {
       <div className="md:flex md:flex-row   xs:flex-col xs:overflow-hidden md:overflow-auto">
         <SideBar/>
       
-        <main className='flex-1 md:px-10 py-7 xs:px-0 bg-gray-50'>
+        <main className='flex-1 md:px-10 py-7 xs:px-3 bg-gray-50'>
           <header>
             <h1 className='text-[30px]'>Settings</h1>
             <small className='text-base text-gray-500 font-light'>Manage your team and preferences here</small>
