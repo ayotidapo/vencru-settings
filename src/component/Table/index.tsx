@@ -2,8 +2,8 @@ import Girl2 from '../../assets/img/girl-2.png'
 
  const Table =()=>{
     return(
-        <section className='border border-t-gray-200 rounded-[8px]'>
-            <table className='table w-full hover:cursor-pointer text-gray-500'>
+        <section className='border border-t-gray-200 rounded-[8px]  overflow-scroll'>
+            <table className='table w-full hover:cursor-pointer text-gray-500 min-w-[768px]'>
                 <thead className='text-gray-500 text-xs bg-gray-50 '>
                     <tr className='text-center h-[44px]'>
                     <th className='flex h-full items-center justify-center ml-3'>

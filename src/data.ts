@@ -9,10 +9,15 @@ const data= {
         title:'Mastercard ending in 1234',
         expiryDate: 'Expiry 06/2024 '
     }
+   ],
+   navbuttons:[
+    'Password',
+    'Team',
+    'Plan',
+    'Billing',
+    'Integrations',
+    'API'
    ]
-
-
-
 
 }
 

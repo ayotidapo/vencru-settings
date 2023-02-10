@@ -10,7 +10,7 @@ interface Props{
  const PayCard:React.FC<Props> =(props:Props)=>{
     const {id, title,expiryDate} = props.item
     return(
-        <label className='h-[100px] mb-5 relative block border hover:border-purple-500 rounded-[8px]'
+        <label className='h-[100px] mb-5 xs:mb-3 relative block border hover:border-purple-500 rounded-[8px]'
          htmlFor={id}
          >
             <input type="radio" className='hidden ' name="payment" id={id} checked/>            
