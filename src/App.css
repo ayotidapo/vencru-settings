@@ -1,9 +1,15 @@
 .app-container{
-  @apply h-screen overflow-scroll border border-red-500 max-w-[2560px] mx-auto  px-3;
+  @apply h-screen overflow-scroll bg-gray-50 max-w-[2560px] mx-auto  px-3;
 }
 .side-bar{
-  @apply border border-vencruGray-100 w-[17.5rem] h-[960px] pr-3 pl-0 px-2 pt-5 border-l-0;
+  @apply md:border md:border-y-0 md:border-l-0 md:border-vencruGray-100 md:w-[17.5rem]  xs:w-full md:h-[960px] xs:h-[auto] md:pr-3 pl-0 md:px-2 pt-5 border-l-0 xs:pr-0 
+  xs:border-0 bg-white;
 }
+
+
+
+
+
 
 .search-input{
   @apply border  h-[44px] rounded-[8px] input-shadow border-customGray pl-[40px];
@@ -25,6 +31,14 @@
   filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
 
 }
+
+.nav-btns::-webkit-scrollbar{
+  display: none;
+}
+.nav-btns {
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+}
 .header-btn-group li:last-of-type{
   border-right-color: transparent;
 }
@@ -41,7 +55,6 @@ img {
   height:100%;
   object-fit: contain;
 }
-
 
 .check-circle, .check-mark{
   @apply rounded-full border border-purple-400 inline-flex h-4 w-4 justify-center items-center hover:cursor-pointer;
@@ -63,14 +76,12 @@ input[type="radio"]:checked + .check-circle::after{
 
 }
 
-
 .check-mark{
   background:transparent;
 }
 
 .check-mark::after{
   content: ''; 
-
 }
 
 input[type="radio"]:checked + .check-mark::after{
@@ -89,7 +100,17 @@ input[type="radio"]:checked + .check-mark{
 }
 
 input[type="radio"]:checked ~ div{
-  background:#7F56D9;
+  background:#F2E0FF;
+}
+
+input[type="radio"]:checked ~ div .text-a{
+  color:#53389E;
+}
+input[type="radio"]:checked ~ div .text-b{
+  color:#7F56D9;
+}
+input[type="radio"]:checked ~ div .text-c{
+  color:#9E77ED;
 }
 
  .table{
@@ -130,17 +151,6 @@ input[type="radio"]:checked ~ div{
 
 }
 
-
-/* input[type="radio"] + .check-mark{
-  
-  background:#7F56D9;
-  content: '';
-  background:#7F56D9;
-  
-
-} */
-
-
 input[type="text"]{
   width: 100%;
   outline: none;
@@ -152,15 +162,7 @@ input[type="text"]:focus{
   box-shadow: 0px 0px 5px 1px #D6BBFB;
 }
 
-
-
-
 .input-shadow{
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
   
-input[type="checkbox"] {
-  -webkit-appearance: checkbox; /* for Chrome */
-  -moz-appearance: checkbox; /* for Firefox */
-  appearance: checkbox;
-}
