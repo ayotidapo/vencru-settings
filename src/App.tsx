@@ -4,21 +4,20 @@ import  PayCard   from './common/PayCard'
 import NavGroup from './component/NavGroup'
 import './App.css'
 import {ReactComponent as Envelope} from './assets/svg/envelope.svg'
-import {ReactComponent as Visa} from './assets/svg/visa.svg'
-import {ReactComponent as MasterCard} from './assets/svg/mastercard.svg'
+
 import {ReactComponent as Download} from './assets/svg/download.svg'
 import {ReactComponent as Add} from './assets/svg/add.svg'
 import data from './data'
 
 
 function App() {
-  const icons:any[]= [Visa,MasterCard]
+
   return (
     <div className="app-container">
-      <div className="md:flex md:flex-row   xs:flex-col xs:overflow-hidden md:overflow-auto">
+      <div className="lg:flex lg:flex-row   xs:flex-col xs:overflow-hidden md:overflow-auto">
         <SideBar/>
       
-        <main className='flex-1 md:px-10 py-7 xs:px-3 bg-gray-50'>
+        <main className='flex-1 xl:px-10 py-7 xs:px-3 bg-gray-50'>
           <header>
             <h1 className='text-[30px]'>Settings</h1>
             <small className='text-base text-gray-500 font-light'>Manage your team and preferences here</small>
@@ -49,9 +48,7 @@ function App() {
                 <label className='flex flex-wrap hover:cursor-pointer'>
                   <div className='mr-2'>
                     <input type="radio" className='hidden' name="send-email" checked/>
-                    <span className='check-circle'/>
-                  
-
+                    <span className='check-circle'/>                  
                   </div>
                   <h6 className='mb-3 text-sm text-slate-600 font-medium'>Send to an alternative email</h6>
                   <div className='md:flex relative  md:w-[85%] xs:w-full ml-6'>

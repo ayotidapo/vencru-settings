@@ -20,9 +20,9 @@ const SideBar =()=>{
           <div className="flex items-center my-2 ml-3 ">
             <Icon/>
             <h3 className='ml-2 text-xl '> Untitled UI</h3>
-            <Hamburger className='xs:block xs:ml-[auto] md:hidden hover:cursor-pointer mr-2'/>
+            <Hamburger className='xs:block xs:ml-[auto] lg:hidden hover:cursor-pointer mr-2'/>
           </div>
-        <div className='md:block  xs:hidden'>
+        <div className='lg:block  xs:hidden'>
           <div className='flex relative my-6 w-[95%] pl-3'>
             <Search  className='search-icon'/>
             <input type="text" className='search-input' placeholder='Search'/>

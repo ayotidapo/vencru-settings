@@ -2,13 +2,9 @@
   @apply h-screen overflow-scroll bg-gray-50 max-w-[2560px] mx-auto  md:px-3  xs:px-0;
 }
 .side-bar{
-  @apply md:border md:border-y-0 md:border-l-0 md:border-vencruGray-100 md:w-[17.5rem]  xs:w-full md:h-[960px] xs:h-[auto] md:pr-3 pl-0 md:px-2 md:pt-5 border-l-0 xs:px-0.5
+  @apply md:border md:border-y-0 md:border-l-0 md:border-vencruGray-100 lg:w-[17.5rem]  xs:w-full lg:h-[960px] xs:h-[auto] md:pr-3 pl-0 md:px-2 md:pt-5 border-l-0 xs:px-0.5
   xs:border-0 bg-white xs:p-3 ;
 }
-
-
-
-
 
 
 .search-input{
