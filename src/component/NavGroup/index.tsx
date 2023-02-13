@@ -11,7 +11,7 @@ const NavGroup:React.FC<Props> = (props:Props)=>{
                 {items.map(item => (
                 
                     <li className='border border-y-0 border-l-0 border-r-customGray' key={item}>
-                        <button className='p-2 px-4 text-sm hover:bg-gray-50'>
+                        <button className='p-2 px-4 text-sm hover:bg-gray-50  xs:min-w-[100px]'>
                         {item}
                         </button>
                     </li>

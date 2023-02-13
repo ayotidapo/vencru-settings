@@ -13,7 +13,7 @@ const data= {
     }
    ],
    navbuttons:[
-    'My Details',
+    'My details',
     'Profile',
     'Password',
     'Team',
